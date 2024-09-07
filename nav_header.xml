@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:id="@+id/logo_lenear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/goal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_text_layout"
+        android:layout_below="@+id/logo_lenear"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account!"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#0066ff"/>
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:textColor="#0066ff"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_double_arrow_24"/>
+    </LinearLayout>
+
+    <View
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/header_text_layout"
+        android:background="@drawable/gradient"
+        />
+
+
+</RelativeLayout>
